@@ -1,0 +1,197 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(fundo2.avif);
+    background-size: cover;
+    margin: 0;
+    background-attachment: fixed;
+}
+
+/* NAVEGAÇÃO */
+.naveg{
+    display: grid;
+    grid-template-columns: 200px 1000px;
+    grid-template-rows: 70px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+}
+.logo a{
+    color: rgb(0, 255, 0);
+    font-size: 28px;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.5s;
+}
+.logo a:hover{
+    font-size: 35px;
+    transition: 0.5s;
+}
+.menu{
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    
+    margin-left: 10%;
+    text-align: end;
+}
+.menu a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px 15px;
+    transition: 0.5s;
+}
+.menu a:hover{
+    color: rgb(184, 184, 184);
+    font-size: 23px;
+    transition: 0.5s;
+}
+
+
+/* LOGIN*/
+.principal{
+    display: grid;
+    grid-template-columns: 400px 400px 450px;
+    grid-template-rows: 300px;
+    
+    margin-top: 70px;
+    justify-content: start;
+    align-items: center;
+    margin-left: 5%;
+
+    animation-duration: 2s;
+    animation-name: apar;
+}
+
+.texto{
+    justify-content: center;
+    align-items: start;
+    
+    margin-left: 20px;
+}
+.texto h1{
+    font-size: 50px;
+    color: green;
+    text-shadow: 1px 1px 2px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    letter-spacing: 3px;
+}
+.texto h2{
+    font-size: 35px;
+    font-weight: 700;
+    color: green;
+    border-radius: 50%;
+    padding: 30px;
+
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: mc;
+}
+.texto p{
+    font-size: 18px;
+    color: white;
+    justify-content: center;
+    text-indent: 15px;
+    text-align: justify;
+    font-weight: 600;
+}
+
+.conteiner{
+    margin-left: 20px;
+    background-color: rgba(87, 87, 87, 0.541);
+    justify-content: center;
+    align-items: start;
+    padding: 15px;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+}
+.conteiner label{
+    font-size: 18px;
+    color: white;
+
+}
+.conteiner input{
+    font-size: 18px;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+.conteiner a{
+    background-color: rgba(0, 128, 0, 0.589);
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    border-radius: 15px;
+    margin-left: 35%;
+    
+    transition: 0.6s;
+}
+.conteiner a:hover{
+    background-color: rgba(0, 128, 0, 0.836);
+    padding: 12px 18px;
+    font-size: 22px;
+    transition: 0.6s;
+
+}
+
+/* ANIMAÇÕES */
+
+@keyframes apar{
+    from{
+        margin-left: 0;
+        opacity: 0;
+    }
+    to{
+        margin-left: 5%;
+        opacity: 1.5;
+    }
+}
+@keyframes mc{
+    0%{
+        color: green;
+        transform: translateY(-30px);
+        font-size: 35px;
+        border-left: 3px solid rgb(0, 255, 0);
+        
+    }
+    50%{
+        color: rgb(0, 255, 0);
+        transform: translateY(0px);
+        font-size: 30px;
+        border-top: 3px solid rgb(0, 255, 0);
+    }
+    100%{
+        color: rgb(2, 128, 2);
+        transform: translateY(-30px);
+        font-size: 35px;
+        border-right: 3px solid rgb(0, 255, 0);
+    }
+}
+
+
+footer{
+    background: linear-gradient( rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.637),black);
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+}

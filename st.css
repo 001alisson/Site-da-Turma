@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 150px;
+}
+
+/* Navegação */
+.naveg{
+    display: grid;
+    grid-template-columns: 300px 950px;
+    grid-template-rows: 70px;
+    background-color: rgb(0, 184, 0);
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    padding: 10px;
+    z-index: 10000;
+}
+.logo{
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    height: fit-content;
+}
+.menu{
+    margin-left: 20%;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.menu a{
+    margin: 25px;
+    padding: 15px 20px;
+    border-bottom: 2px solid rgb(71, 71, 71);
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.6s;
+}
+.menu a:hover{
+    color: rgb(221, 221, 221);
+    border-bottom: 2px solid black;
+    padding: 10px 15px;
+    box-shadow: 2px 3px 4px black;
+    transition: 0.6s; 
+}
+
+/* Sobre */
+
+.caixa{
+    display: grid;
+    grid-template-columns: 400px 600px;
+    grid-template-rows: 400px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: fit-content;
+    margin-left: 10%;
+
+    animation-duration: 2s;
+    animation-name: apa;
+}
+.imagem{
+    justify-content: center;
+    align-items: center;
+    
+    margin: 5px;
+    opacity: 1.5;
+}
+.texto{
+    justify-content: center;
+    align-items: start;
+    padding: 15px;
+}
+.texto h1{
+    font-size: 35px;
+    color: rgb(0, 185, 0);
+    font-weight: 600;
+}
+.texto p{
+    color: green;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+/* Trabalhos */
+.principal{
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 250px 250px 250px 250px 250px 250px 250px 250px 250px 250px;
+    background: radial-gradient(white, rgb(0, 128, 0));
+    border-radius: 20px;
+    padding: 10px;
+    width: fit-content;
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+
+    animation-duration: 2s;
+    animation-name: apa;
+}
+.alunos{
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 3px 4px black;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(150deg, white, rgba(51, 51, 51, 0.479));
+    transition: 0.5s;
+}
+.alunos:hover{
+    transition: 0.5s;
+    transform: translateY(-20px);
+}
+.alunos p{
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+}
+.alunos a{
+    top: 0;
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: green;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.alunos a:hover{
+    padding: 10px 20px;
+    background-color: rgb(0, 184, 0);
+    border-bottom: 4px solid white;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+/* Alunos */
+.foto{
+    border-radius: 50%;
+    border-bottom: 8px solid black;
+    border-left: 8px solid black;
+    margin-left: 38%;
+    box-shadow: 3px 4px 5px black;
+
+    transition: 1s;
+}
+.foto:hover{
+    width: 350px;
+    height: 350px;
+    transition: 1s;
+}
+.nome{
+    text-align: center;
+    font-size: 30px;
+    color:rgb(0, 128, 0);
+    font-weight: 700;
+}
+
+/* Animações */
+
+@keyframes fot{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1.5;
+    }
+}
+
+@keyframes apa{
+    from{
+        opacity: 0;
+        margin-left: 0;
+    }
+    to{
+        opacity: 1.5;
+        margin-left: 10%;
+    }
+}
+@keyframes apab{
+    from{
+        opacity: 0;
+        margin-left: 0;
+    }
+    to{
+        opacity: 1.5;
+        margin-left: 10%;
+    }
+}
+
+.t{
+    margin-left: 20px;
+    text-align: start;
+    font-size: 60px;
+    color:rgb(0, 184, 0);
+    text-shadow: 0px 3px 3px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer{
+    background: linear-gradient(white, rgb(0, 185, 0));
+    text-align: center;
+    height: 150px;
+}
+
+/* Cadastro */
+
